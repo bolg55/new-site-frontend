@@ -1,7 +1,12 @@
-html,
-body {
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style: none;
+}
+
+html,
+body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -11,6 +16,16 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.btn {
+  border-radius: 2px;
+  padding: 10px 25px;
+  background-color: #ed2f8e;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #ed2f8e !important;
+  border-color: #ed2f8e;
+  border: 2px solid #ed2f8e;
 }
