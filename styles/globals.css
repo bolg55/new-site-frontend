@@ -17,8 +17,8 @@ a {
 }
 
 .btn {
-  border-radius: 2px;
-  padding: 10px 25px;
+  border-radius: 50px;
+  padding: 8px 25px;
   background-color: #ed2f8e;
   border: 2px solid transparent;
 }
@@ -28,4 +28,16 @@ a {
   color: #ed2f8e !important;
   border-color: #ed2f8e;
   border: 2px solid #ed2f8e;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
+  .btn:hover {
+    color: #00cc66 !important;
+    border: none;
+  }
 }
