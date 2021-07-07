@@ -8,5 +8,6 @@
       "@/utils/*": ["utils/*"],
       "@/public/*": ["public/*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }

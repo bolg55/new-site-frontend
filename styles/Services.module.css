@@ -1,0 +1,22 @@
+.services {
+  width: 100%;
+  background-color: red;
+  display: grid;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+}
+
+.col1 {
+  flex: 50%;
+  background-color: teal;
+  padding: 100px 0;
+}
+
+.col2 {
+  flex: 50%;
+  background-color: yellowgreen;
+  padding: 100px 0;
+}
