@@ -42,10 +42,13 @@ const links = data.map((link) => {
 export default function Footer() {
   return (
     <div className={styles.footer}>
-      <p>Copyright &copy; 2021 Kellen Bolger</p>
       <div className={styles.social}>
         <ul>{links}</ul>
       </div>
+      <p>
+        Copyright &copy; {new Date().getFullYear()}{" "}
+        <span className={styles.kbgreen}>KellenBolger.ca</span>
+      </p>
     </div>
   )
 }

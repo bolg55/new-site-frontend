@@ -19,15 +19,14 @@ a {
 .btn {
   border-radius: 50px;
   padding: 8px 25px;
-  background-color: #ed2f8e;
-  border: 2px solid transparent;
+  border: 2px solid #ed2f8e;
 }
 
 .btn:hover {
-  background-color: transparent;
-  color: #ed2f8e !important;
+  background-color: #ed2f8e;
+  color: #fff !important;
   border-color: #ed2f8e;
-  border: 2px solid #ed2f8e;
+  border: 2px solid transparent;
 }
 
 @media (max-width: 768px) {
@@ -38,6 +37,7 @@ a {
   }
   .btn:hover {
     color: #00cc66 !important;
+    background-color: transparent;
     border: none;
   }
 }
