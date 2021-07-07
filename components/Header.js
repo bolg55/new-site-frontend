@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import logo from "../public/kbShort.png"
-import styles from "../styles/Header.module.css"
+import logo from "@/public/kbShort.png"
+import styles from "@/styles/Header.module.css"
 
 export default function Header() {
   return (
