@@ -9,12 +9,22 @@ export default function Header() {
       <div className={styles.logo}>
         <Link href='/'>
           <a>
-            <Image
-              src={logo}
-              alt='kellen bolger logo'
-              height={100}
-              width={100}
-            />
+            <h2 className='logo'>
+              {`{k`}
+              <span className='greenB'>B</span>
+              {`}`}
+            </h2>
+          </a>
+        </Link>
+      </div>
+      <div className={styles.logoBig}>
+        <Link href='/'>
+          <a>
+            <h2 className='logo'>
+              {`{kellen`}
+              <span className='greenB'>Bolger</span>
+              {`}`}
+            </h2>
           </a>
         </Link>
       </div>
