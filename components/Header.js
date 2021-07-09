@@ -1,6 +1,4 @@
-import Image from "next/image"
 import Link from "next/link"
-import logo from "@/public/kbShort.png"
 import styles from "@/styles/Header.module.css"
 
 export default function Header() {
@@ -17,18 +15,6 @@ export default function Header() {
           </a>
         </Link>
       </div>
-      <div className={styles.logoBig}>
-        <Link href='/'>
-          <a>
-            <h2 className='logo'>
-              {`{kellen`}
-              <span className='greenB'>Bolger</span>
-              {`}`}
-            </h2>
-          </a>
-        </Link>
-      </div>
-
       <nav>
         <ul>
           <li>
@@ -53,7 +39,7 @@ export default function Header() {
           </li>
           <li>
             <Link href='/contact'>
-              <a className='btn'>Contact</a>
+              <a>Contact</a>
             </Link>
           </li>
         </ul>

@@ -4,6 +4,10 @@
   align-items: center;
   padding: 20px 50px;
   background-color: #020202;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .header a {
@@ -22,40 +26,14 @@
 }
 
 .logo {
-  margin-bottom: 1rem;
-  display: none;
-  align-items: center;
-  font-size: 1.5rem;
-}
-
-.logoBig {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .header ul {
-    margin: 20px 0;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header a {
-    margin-right: 0;
-  }
-
-  .logo {
-    display: flex;
-    margin-bottom: -20px;
-  }
-  .logoBig {
     display: none;
   }
 }

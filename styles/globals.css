@@ -1,6 +1,8 @@
 @import url(//db.onlinewebfonts.com/c/2a61d83e6af5b73f8f7751643f767325?family=Greycliff+CF+Demi+Bold);
 
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -12,38 +14,12 @@ body {
   font-family: "Greycliff CF Demi Bold";
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  background-color: #cfcfcf;
+  background-color: #fff;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.btn {
-  border-radius: 50px;
-  padding: 8px 25px;
-  border: 2px solid #ed2f8e;
-}
-
-.btn:hover {
-  background-color: #ed2f8e;
-  color: #fff !important;
-  border-color: #ed2f8e;
-  border: 2px solid transparent;
-}
-
-@media (max-width: 768px) {
-  .btn {
-    border: none;
-    padding: 0;
-    background-color: transparent;
-  }
-  .btn:hover {
-    color: #00cc66 !important;
-    background-color: transparent;
-    border: none;
-  }
 }
 
 .underline {
@@ -52,7 +28,7 @@ a {
   margin-bottom: 1.25em;
   margin-left: auto;
   margin-right: auto;
-  background: blue;
+  background: #00cc66;
 }
 
 .greenB {
