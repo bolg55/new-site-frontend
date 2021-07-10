@@ -1,22 +1,35 @@
 .services {
-  width: 100%;
-  background-color: red;
-  display: grid;
+  margin-top: 5rem;
+  padding: 0 3.5rem;
 }
 
 .container {
   display: flex;
-  text-align: center;
+  align-items: flex-start;
+  gap: 5rem;
+  margin: 10rem 2rem;
+}
+
+.container h2 {
+  font-size: 3rem;
+  color: rgb(27, 27, 27);
+  padding-bottom: 1.5rem;
+}
+
+.container h4 {
+  font-size: 2rem;
+  color: #555;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 .col1 {
-  flex: 50%;
-  background-color: teal;
-  padding: 100px 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 .col2 {
-  flex: 50%;
-  background-color: yellowgreen;
-  padding: 100px 0;
+  display: flex;
+  flex: 1;
 }

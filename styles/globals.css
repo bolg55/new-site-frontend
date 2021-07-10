@@ -14,7 +14,7 @@ body {
   font-family: "Greycliff CF Demi Bold";
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  background-color: #fff;
+  background-color: #f1f5f8;
 }
 
 a {
@@ -23,12 +23,21 @@ a {
 }
 
 .underline {
-  width: 5.5em;
-  height: 0.25em;
-  margin-bottom: 1.25em;
+  width: 5.5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
   margin-left: auto;
   margin-right: auto;
   background: #00cc66;
+}
+
+.underline2 {
+  width: 5.5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: #4b07ea;
 }
 
 .greenB {

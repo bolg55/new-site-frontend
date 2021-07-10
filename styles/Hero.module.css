@@ -2,7 +2,7 @@
   display: flex;
   background-color: #020202;
   height: 100vh;
-  margin-top: -5rem;
+  margin-top: -6.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -61,7 +61,7 @@
 }
 
 .btn2:hover {
-  background-color: #555;
+  background-color: rgba(85, 85, 85, 0.25);
   border: 2px solid transparent;
 }
 

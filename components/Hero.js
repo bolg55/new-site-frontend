@@ -12,10 +12,10 @@ export default function Hero() {
           <h4>A web developer specializing in Next.js, React and more.</h4>
           <div className={styles.buttonContainer}>
             <div className={`${styles.btn} ${styles.btn1}`}>
-              I&apos;m Looking to Hire
+              I&apos;m looking to hire
             </div>
             <div className={`${styles.btn} ${styles.btn2}`}>
-              I Need a Website
+              I need a website
             </div>
           </div>
           <SocialLinks />

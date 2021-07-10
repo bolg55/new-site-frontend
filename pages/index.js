@@ -1,6 +1,9 @@
 import Layout from "@/components/Layout"
-import Services from "@/components/Services"
 import Hero from "@/components/Hero"
+import Services from "@/components/Services"
+import Experience from "@/components/Experience"
+import Featured from "@/components/Featured"
+import FeaturedBlogs from "@/components/FeaturedBlogs"
 
 export default function HomePage() {
   return (
@@ -8,6 +11,9 @@ export default function HomePage() {
       <Layout>
         <Hero />
         <Services />
+        <Experience />
+        <Featured />
+        <FeaturedBlogs />
       </Layout>
     </div>
   )

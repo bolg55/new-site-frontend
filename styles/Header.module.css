@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
-  background-color: #020202;
+  padding: 0 50px;
+  background-color: #020202ea;
   width: 100%;
   position: sticky;
   top: 0;
@@ -12,24 +12,17 @@
 
 .header a {
   color: #fff;
-  margin-right: 2rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  margin-right: 1.5rem;
   transition: all 0.5s ease;
+  font-size: 1.2rem;
 }
 
 .header a:hover {
   color: #00cc66;
 }
+
 .header ul {
   display: flex;
-}
-
-.logo {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  font-size: 2.5rem;
 }
 
 @media (max-width: 768px) {

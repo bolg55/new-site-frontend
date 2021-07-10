@@ -1,4 +1,6 @@
 .title {
-  margin-bottom: 4em;
+  margin-bottom: 4rem;
   text-align: center;
+  font-size: 2rem;
+  color: rgb(27, 27, 27);
 }

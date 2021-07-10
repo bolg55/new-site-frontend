@@ -1,5 +1,7 @@
 import Link from "next/link"
 import styles from "@/styles/Header.module.css"
+import Image from "next/image"
+import logo from "@/public/kbShort.png"
 
 export default function Header() {
   return (
@@ -7,11 +9,13 @@ export default function Header() {
       <div className={styles.logo}>
         <Link href='/'>
           <a>
-            <h2 className='logo'>
-              {`{k`}
-              <span className='greenB'>B</span>
-              {`}`}
-            </h2>
+            <Image
+              className={logo}
+              src={logo}
+              alt='logo'
+              height={100}
+              width={100}
+            />
           </a>
         </Link>
       </div>
