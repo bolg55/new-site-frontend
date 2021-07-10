@@ -4,3 +4,9 @@
   font-size: 2rem;
   color: rgb(27, 27, 27);
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.2rem;
+  }
+}

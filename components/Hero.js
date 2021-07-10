@@ -1,6 +1,7 @@
 import styles from "@/styles/Hero.module.css"
 import SocialLinks from "@/components/SocialLinks"
 import { FaArrowDown } from "react-icons/fa"
+import Link from "next/link"
 
 export default function Hero() {
   return (

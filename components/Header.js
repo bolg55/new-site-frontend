@@ -2,6 +2,7 @@ import Link from "next/link"
 import styles from "@/styles/Header.module.css"
 import Image from "next/image"
 import logo from "@/public/kbShort.png"
+import { FaAlignRight } from "react-icons/fa"
 
 export default function Header() {
   return (
@@ -48,6 +49,9 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <button type='button' className={styles.toggleBtn}>
+        <FaAlignRight></FaAlignRight>
+      </button>
     </header>
   )
 }

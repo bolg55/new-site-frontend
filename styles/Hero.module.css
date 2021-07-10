@@ -84,15 +84,39 @@
   .hero {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 5rem;
+    align-items: center;
+    height: 80vh;
   }
+
   .info {
-    max-width: 80%;
+    max-width: 60%;
   }
+
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero h4 {
+    font-size: 1.5rem;
+  }
+
   .social {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .arrow {
+    display: none;
   }
 }

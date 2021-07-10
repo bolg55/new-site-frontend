@@ -25,7 +25,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className={styles.container}>
+      <div className={`${styles.container} ${styles.containerOpp}`}>
         <div className={styles.col2}>
           <Image src={pic2} alt='placeholder' />
         </div>

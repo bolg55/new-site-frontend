@@ -49,3 +49,10 @@ a {
   color: white;
   text-transform: lowercase;
 }
+
+@media (max-width: 768px) {
+  .underline,
+  .underline2 {
+    height: 0.12rem;
+  }
+}
