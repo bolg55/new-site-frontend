@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  background-color: #020202ea;
+  padding: 1rem 50px;
+  background-color: transparent;
   width: 100%;
-  position: sticky;
+
   top: 0;
   z-index: 999;
 }
@@ -44,9 +44,12 @@
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar ul {
     display: none;
+  }
+  .logo {
+    width: 75px;
   }
 }
 

@@ -56,3 +56,10 @@ a {
     height: 0.12rem;
   }
 }
+
+@media (max-width: 420px) {
+  .underline,
+  .underline2 {
+    display: none;
+  }
+}
