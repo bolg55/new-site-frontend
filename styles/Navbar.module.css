@@ -1,4 +1,4 @@
-.header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,18 +10,23 @@
   z-index: 999;
 }
 
-.header a {
+.navlinks {
   color: #fff;
+
+  text-transform: capitalize;
+}
+
+.navlinks a {
   margin-right: 1.5rem;
   transition: all 0.5s ease;
   font-size: 1.2rem;
 }
 
-.header a:hover {
+.navlinks a:hover {
   color: #00cc66;
 }
 
-.header ul {
+.navbar ul {
   display: flex;
 }
 
@@ -35,13 +40,17 @@
   outline: none;
 }
 
+.toggleBtn:hover {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
-  .header ul {
+  .navbar ul {
     display: none;
   }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .toggleBtn {
     display: none;
   }

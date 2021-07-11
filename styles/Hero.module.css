@@ -70,13 +70,25 @@
   color: rgba(85, 85, 85, 0.479);
   top: 18rem;
   font-size: 2.5rem;
-  animation: show-arrow 0s 5s forwards;
+  animation: show-arrow 0s 5s forwards, move-arrow 1s infinite alternate;
   visibility: hidden;
 }
 
 @keyframes show-arrow {
-  to {
+  99% {
+    visibility: hidden;
+  }
+  100% {
     visibility: visible;
+  }
+}
+
+@keyframes move-arrow {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
 
@@ -110,13 +122,28 @@
     font-size: 1.5rem;
   }
 
-  .social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .arrow {
     display: none;
   }
+}
+.social ul {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #00cc66;
+}
+
+.social a {
+  margin: 0 10px;
+}
+
+.social-link a:hover {
+  color: #fff;
+  transition: all 0.4s ease-in-out;
 }

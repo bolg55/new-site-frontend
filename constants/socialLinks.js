@@ -1,5 +1,3 @@
-import styles from "@/styles/Links.module.css"
-
 import {
   FaInstagramSquare,
   FaLinkedin,
@@ -10,8 +8,8 @@ import {
 const data = [
   {
     id: 1,
-    icon: <FaInstagramSquare className='social-icon'></FaInstagramSquare>,
-    url: "https://www.instagram.com/kellenbolger",
+    icon: <FaGithubSquare className='social-icon'></FaGithubSquare>,
+    url: "https://github.com/bolg55",
   },
   {
     id: 2,
@@ -25,30 +23,23 @@ const data = [
   },
   {
     id: 4,
-    icon: <FaGithubSquare className='social-icon'></FaGithubSquare>,
-    url: "https://github.com/bolg55",
+    icon: <FaInstagramSquare className='social-icon'></FaInstagramSquare>,
+    url: "https://www.instagram.com/kellenbolger",
   },
 ]
 
 const links = data.map((link) => {
   return (
     <li key={link.id}>
-      <a
-        href={link.url}
-        target='_blank'
-        rel='noreferrer'
-        className={styles["social-link"]}
-      >
+      <a href={link.url} target='_blank' rel='noreferrer'>
         {link.icon}
       </a>
     </li>
   )
 })
 
-export default function SocialLinks() {
+export default ({ styleClass }) => {
   return (
-    <div className={styles.social}>
-      <ul>{links}</ul>
-    </div>
+    <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
   )
 }
