@@ -1,4 +1,5 @@
 @import url(//db.onlinewebfonts.com/c/2a61d83e6af5b73f8f7751643f767325?family=Greycliff+CF+Demi+Bold);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 *,
 ::after,
@@ -11,7 +12,8 @@
 
 html,
 body {
-  font-family: "Greycliff CF Demi Bold", "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Greycliff CF Demi Bold", "Open Sans", "Roboto", Arial, Helvetica,
+    sans-serif;
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   background-color: #f1f5f8;
@@ -31,15 +33,6 @@ a {
   background: #00cc66;
 }
 
-.underline2 {
-  width: 5.5rem;
-  height: 0.25rem;
-  margin-bottom: 1.25rem;
-  margin-left: auto;
-  margin-right: auto;
-  background: #4b07ea;
-}
-
 .greenB {
   color: #00cc66;
   text-transform: capitalize;
@@ -51,15 +44,13 @@ a {
 }
 
 @media (max-width: 768px) {
-  .underline,
-  .underline2 {
+  .underline {
     height: 0.12rem;
   }
 }
 
 @media (max-width: 420px) {
-  .underline,
-  .underline2 {
+  .underline {
     display: none;
   }
 }

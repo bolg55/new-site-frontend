@@ -5,7 +5,7 @@ import pic1 from "@/public/undrawPurple.svg"
 import pic2 from "@/public/undrawCoding.svg"
 import pic3 from "@/public/undrawSEO.svg"
 
-export default function Services() {
+const Services = () => {
   return (
     <div className={styles.services}>
       <Title title='Services' />
@@ -54,3 +54,5 @@ export default function Services() {
     </div>
   )
 }
+
+export default Services

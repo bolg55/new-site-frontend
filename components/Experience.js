@@ -1,13 +1,49 @@
 import Title from "@/components/Title"
 import styles from "@/styles/Experience.module.css"
+import { useState } from "react"
+import { FaAngleDoubleRight } from "react-icons/fa"
+import Link from "next/link"
 
-export default function Experience() {
+export default function Experience({ jobs }) {
+  const [value, setValue] = useState(0)
+  const { company, position, date, desc } = jobs[value]
+  console.log(company, position, date, desc)
   return (
-    <div className={styles.experience}>
-      <Title title='Experience' underline='underline2' />
-      <div className={styles.container}>
-        <h2>Some type of experience</h2>
+    <section className={styles.experience}>
+      <Title title='Experience' />
+      <div className={styles.jobsCenter}>
+        <div className={styles.btnContainer}>
+          {jobs.map((item, index) => {
+            return (
+              <button
+                key={item.strapiId}
+                onClick={() => setValue(index)}
+                className={`${styles.jobBtn} ${
+                  index === value && `${styles.activeBtn}`
+                }`}
+              >
+                {item.company}
+              </button>
+            )
+          })}
+        </div>
+        <article className={styles.jobInfo}>
+          <h3>{position}</h3>
+          <h4>{company}</h4>
+          <p className={styles.jobDate}>{date}</p>
+          {desc.map((item) => {
+            return (
+              <div key={item.id} className={styles.jobDesc}>
+                <FaAngleDoubleRight className={styles.jobIcon} />
+                <p>{item.name}</p>
+              </div>
+            )
+          })}
+        </article>
       </div>
-    </div>
+      <Link href='/about'>
+        <a className={styles.btn}>more info</a>
+      </Link>
+    </section>
   )
 }
