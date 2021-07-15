@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout"
 import Experience from "@/components/Experience"
+
 import { gql } from "@apollo/client"
 import client from "../apollo-client"
 import Title from "@/components/Title"

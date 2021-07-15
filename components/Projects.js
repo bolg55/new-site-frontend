@@ -1,12 +1,18 @@
 import Title from "@/components/Title"
-import styles from "@/styles/AllProjects.module.css"
+import styles from "@/styles/Projects.module.css"
 import Link from "next/link"
 import Project from "@/components/Project"
+import { useRouter } from "next/router"
 
-const Projects = ({ projects, showLink }) => {
+const Projects = ({ projects, title, showLink }) => {
+  const router = useRouter()
   return (
-    <section className={`${styles.section} ${styles.projects}`}>
-      <Title title='Featured Projects' />
+    <section
+      className={`${styles.featured} ${
+        router.pathname === "/" ? `${styles.projects}` : ""
+      }`}
+    >
+      <Title title={title} />
       <div className={styles.center}>
         {projects.map((project, index) => {
           return <Project key={project.id} index={index} {...project} />
@@ -14,7 +20,7 @@ const Projects = ({ projects, showLink }) => {
       </div>
       {showLink && (
         <Link href='/projects'>
-          <a className={styles.btn}>projects </a>
+          <a className={styles.btn}>all projects</a>
         </Link>
       )}
     </section>

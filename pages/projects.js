@@ -6,7 +6,7 @@ import client from "../apollo-client"
 export default function ProjectsPage({ projects }) {
   return (
     <Layout title='Projects | kellenbolger.ca'>
-      <Projects projects={projects} />
+      <Projects projects={projects} title='All projects' />
     </Layout>
   )
 }

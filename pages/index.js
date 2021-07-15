@@ -12,14 +12,14 @@ export default function HomePage({ projects }) {
       <Layout>
         <Hero />
         <Services />
-        <Projects projects={projects} showLink />
+        <Projects projects={projects} title='Featured projects' showLink />
         <FeaturedBlogs />
       </Layout>
     </div>
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const { data } = await client.query({
     query: gql`
       query {
