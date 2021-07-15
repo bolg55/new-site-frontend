@@ -1,7 +1,7 @@
-.featured {
+/* .featured {
   background: #fff;
   padding: 5rem 3.5rem;
-}
+} */
 
 .project {
   display: grid;
@@ -12,6 +12,7 @@
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   height: 19rem;
+  max-width: 95vw;
   z-index: 1;
 }
 

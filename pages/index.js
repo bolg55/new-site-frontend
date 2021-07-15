@@ -1,37 +1,39 @@
 import Layout from "@/components/Layout"
 import Hero from "@/components/Hero"
 import Services from "@/components/Services"
-import Experience from "@/components/Experience"
-import Featured from "@/components/Featured"
+import Projects from "@/components/Projects"
 import FeaturedBlogs from "@/components/FeaturedBlogs"
 import { gql } from "@apollo/client"
 import client from "../apollo-client"
 
-export default function HomePage({ jobs }) {
+export default function HomePage({ projects }) {
   return (
     <div>
       <Layout>
         <Hero />
         <Services />
-        <Experience jobs={jobs} />
-        <Featured />
+        <Projects projects={projects} showLink />
         <FeaturedBlogs />
       </Layout>
     </div>
   )
 }
 
-export async function getServerSideProps({ jobs }) {
+export async function getStaticProps() {
   const { data } = await client.query({
     query: gql`
       query {
-        jobs {
+        projects(where: { featured: true }) {
           id
-          position
-          company
-          date
-          desc {
-            name
+          title
+          description
+          github
+          url
+          stack {
+            title
+          }
+          image {
+            url
           }
         }
       }
@@ -40,7 +42,7 @@ export async function getServerSideProps({ jobs }) {
 
   return {
     props: {
-      jobs: data.jobs,
+      projects: data.projects,
     },
   }
 }
