@@ -1,3 +1,120 @@
 .featured {
-  padding: 5rem 3.5rem;
+  background: #fff;
+  padding: 2rem 1.5rem;
+}
+
+.blog {
+  display: block;
+  margin-bottom: 2rem;
+  background: hsl(210, 36%, 96%);
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+
+.blog:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.blog article {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.blogCard {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 1.5rem 1rem;
+}
+
+.blogCard p {
+  margin-bottom: 1.25rem;
+  font-family: "open sans";
+  font-weight: 400;
+  color: #555;
+}
+
+.blogImg {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  width: 100%;
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+
+.blogCard h4 {
+  color: #555;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.blogFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blogFooter p {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: "Open Sans";
+  color: rgba(85, 85, 85, 0.747);
+  margin-right: 0.5rem;
+}
+
+.blogFooter span {
+  display: inline-block;
+  color: hsl(210, 22%, 49%);
+  background-color: hsl(212, 33%, 89%);
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  font-family: "Roboto";
+}
+
+@media screen and (min-width: 576px) {
+  .blogsCenter {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+    column-gap: 2rem;
+  }
+  .blogImg {
+    height: 17.5rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .blogImg {
+    height: 13.75rem;
+  }
+}
+
+.btn {
+  background-color: #00cc66;
+  color: #fff;
+  padding: 8px 25px;
+  letter-spacing: 0.2rem;
+  display: block;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-size: 1.2rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  width: 12.5rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.btn:hover {
+  color: #555;
+  background-color: #00cc6650;
 }

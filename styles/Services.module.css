@@ -1,11 +1,13 @@
 .services {
-  margin-top: 5rem;
-  padding: 0 3.5rem;
+  /* margin-top: 5rem; */
+  padding: 5rem 3.5rem;
+  background: #fff;
 }
 
 .container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 5rem;
   margin: 10rem 2rem;
 }
@@ -17,7 +19,7 @@
 }
 
 .container h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #555;
   text-align: left;
   line-height: 1.5;
@@ -32,26 +34,25 @@
 .col2 {
   display: flex;
   flex: 1;
-  background: #fff;
-  border-radius: 15px;
+  /* background: rgba(255, 255, 255, 0.5); */
+  border-radius: 0.25rem;
   padding: 1rem;
-  -webkit-box-shadow: 0px 0px 15px 5px rgba(85, 85, 85, 0.6);
-  box-shadow: 0px 0px 15px 5px rgba(85, 85, 85, 0.6);
+  justify-content: center;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .services {
-    padding: 0 3rem;
+    padding: 2rem 1.5rem;
   }
   .container {
     flex-direction: column-reverse;
-    gap: 2rem;
-    margin: 3rem 3rem;
-    border-radius: 15px;
-    padding: 1rem;
+    gap: 1rem;
+    margin: 3rem 1.5rem;
+    border-radius: 0.25rem;
+    padding: 1.5rem 0.5rem;
     background: #fff;
-    -webkit-box-shadow: 0px 0px 15px 5px rgba(85, 85, 85, 0.6);
-    box-shadow: 0px 0px 15px 5px rgba(85, 85, 85, 0.6);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
 
   .containerOpp {
@@ -59,7 +60,7 @@
   }
 
   .container h2 {
-    font-size: 32px;
+    font-size: 1.5rem;
     text-align: center;
   }
 
@@ -70,7 +71,7 @@
   }
 
   .col2 {
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: none;

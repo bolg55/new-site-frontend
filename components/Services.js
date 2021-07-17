@@ -21,20 +21,20 @@ const Services = () => {
           </h4>
         </div>
         <div className={styles.col2}>
-          <Image src={pic1} alt='placeholder' />
+          <Image src={pic1} alt='web development' />
         </div>
       </div>
 
       <div className={`${styles.container} ${styles.containerOpp}`}>
         <div className={styles.col2}>
-          <Image src={pic2} alt='placeholder' />
+          <Image src={pic2} alt='coding' />
         </div>
         <div className={styles.col1}>
           <h2>Web design</h2>
           <h4>
-            A website isn&apos;t much good if it doesn&apos;t function
-            correctly. Responsive design is an absolute must and I always make
-            sure that every site and web app I build is fully responsive.
+            You need a website that function&apos;s correctly. Responsive design
+            is an absolute must and I always make sure that every site and web
+            app I build is fully responsive.
           </h4>
         </div>
       </div>
@@ -48,7 +48,7 @@ const Services = () => {
           </h4>
         </div>
         <div className={styles.col2}>
-          <Image src={pic3} alt='placeholder' />
+          <Image src={pic3} alt='SEO' />
         </div>
       </div>
     </div>

@@ -20,7 +20,7 @@ const Projects = ({ projects, title, showLink }) => {
       </div>
       {showLink && (
         <Link href='/projects'>
-          <a className={styles.btn}>all projects</a>
+          <a className={styles.btn}>All projects</a>
         </Link>
       )}
     </section>

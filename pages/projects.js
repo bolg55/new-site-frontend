@@ -5,7 +5,10 @@ import client from "../apollo-client"
 
 export default function ProjectsPage({ projects }) {
   return (
-    <Layout title='Projects | kellenbolger.ca'>
+    <Layout
+      title='Projects | kellenbolger.ca'
+      description='A collection of web development projects I have worked on using Next.js, React, Python, Wordpress and more.'
+    >
       <Projects projects={projects} title='All projects' />
     </Layout>
   )

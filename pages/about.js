@@ -1,11 +1,11 @@
 import Layout from "@/components/Layout"
 import Experience from "@/components/Experience"
-
+import About from "@/components/About"
 import { gql } from "@apollo/client"
 import client from "../apollo-client"
 import Title from "@/components/Title"
 
-export default function AboutPage({ jobs }) {
+export default function AboutPage({ jobs, bio }) {
   return (
     <Layout
       title='About | kellenbolger.ca'
@@ -13,11 +13,9 @@ export default function AboutPage({ jobs }) {
     >
       <div>
         <div>
-          <div>
-            <Title title='About Me' />
-          </div>
+          <Title title='About Me' />
         </div>
-
+        <About bio={bio} />
         <Experience jobs={jobs} />
       </div>
     </Layout>
@@ -30,11 +28,20 @@ export async function getStaticProps() {
       query {
         jobs {
           id
+          date
           position
           company
-          date
           desc {
             name
+          }
+        }
+        bio {
+          about
+          image {
+            url
+          }
+          stack {
+            title
           }
         }
       }
@@ -44,6 +51,7 @@ export async function getStaticProps() {
   return {
     props: {
       jobs: data.jobs,
+      bio: data.bio,
     },
   }
 }
