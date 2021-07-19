@@ -1,14 +1,9 @@
 import Layout from "@/components/Layout"
-import { useRouter } from "next/router"
 
-const BlogPage = () => {
-  const router = useRouter()
+export default function BlogTemplate() {
   return (
-    <Layout>
-      <h2>Blog Page</h2>
-      {router.query.slug}
+    <Layout title='Blog | kellenbolger.ca'>
+      <h4>Blogs go here.</h4>
     </Layout>
   )
 }
-
-export default BlogPage

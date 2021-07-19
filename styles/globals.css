@@ -11,7 +11,9 @@
 }
 
 html,
-body {
+body,
+#root {
+  height: 100%;
   font-family: "Greycliff CF Demi Bold", "Open Sans", "Roboto", Arial, Helvetica,
     sans-serif;
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

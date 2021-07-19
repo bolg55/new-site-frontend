@@ -13,7 +13,7 @@ export default function HomePage({ projects, blogs }) {
         <Hero />
         <Services />
         <Projects projects={projects} title='Featured projects' showLink />
-        <Blogs blogs={blogs} title='Featured articles' showLink />
+        <Blogs blogs={blogs} title='Recent articles' showLink />
       </Layout>
     </div>
   )
@@ -36,7 +36,7 @@ export async function getServerSideProps() {
             url
           }
         }
-        blogs(sort: "date:ASC", limit: 3) {
+        blogs(sort: "date:DESC", limit: 3) {
           id
           slug
           title

@@ -92,13 +92,21 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .arrow {
+    top: 10rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
+  .arrow {
+    top: 10rem;
+  }
   .info {
     max-width: 60%;
   }
