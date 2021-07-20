@@ -153,8 +153,8 @@
 
 @media (max-width: 420px) {
   .hero {
-    /* padding-top: 10rem; */
-    height: 110vh;
+    padding-top: 5rem;
+    height: 100vh;
   }
 
   .arrow {
