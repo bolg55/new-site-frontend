@@ -6,6 +6,7 @@ const Blog = ({ slug, title, content, image, desc, date, category, id }) => {
     <Link href={`/blog/${slug}`} key={id}>
       <a className={styles.blog}>
         <article>
+          <a href='http://www.onlinewebfonts.com'>oNline Web Fonts</a>
           <img src={image.url} alt='' className={styles.blogImg} />
           <div className={styles.blogCard}>
             <h4>{title}</h4>

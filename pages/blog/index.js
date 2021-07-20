@@ -6,6 +6,7 @@ import Blogs from "@/components/Blogs"
 export default function BlogPage({ blogs }) {
   return (
     <Layout title='Blog | kellenbolger.ca'>
+      <a href='http://www.onlinewebfonts.com'>oNline Web Fonts</a>
       <Blogs blogs={blogs} title='Blog' />
     </Layout>
   )
