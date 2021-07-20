@@ -9,7 +9,7 @@ export default function ProjectsPage({ projects }) {
       title='Projects | kellenbolger.ca'
       description='A collection of web development projects I have worked on using Next.js, React, Python, Wordpress and more.'
     >
-      <Projects projects={projects} title='All projects' />
+      <Projects projects={projects} title='All projects' showContact />
     </Layout>
   )
 }

@@ -4,12 +4,13 @@ import Image from "next/image"
 import pic1 from "@/public/undrawPurple.svg"
 import pic2 from "@/public/undrawCoding.svg"
 import pic3 from "@/public/undrawSEO.svg"
+import Link from "next/link"
 
 const Services = () => {
   return (
     <div className={styles.services}>
+      <a name='services'></a>
       <Title title='Services' />
-
       <div className={styles.container}>
         <div className={styles.col1}>
           <h2>Web development</h2>
@@ -51,6 +52,9 @@ const Services = () => {
           <Image src={pic3} alt='SEO' />
         </div>
       </div>
+      <Link href='/contact'>
+        <a className={styles.btn}>Contact me</a>
+      </Link>
     </div>
   )
 }

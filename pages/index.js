@@ -13,7 +13,6 @@ export default function HomePage({ projects, blogs }) {
         <Hero />
         <Services />
         <Projects projects={projects} title='Featured projects' showLink />
-        <Blogs blogs={blogs} title='Recent articles' showLink />
       </Layout>
     </div>
   )

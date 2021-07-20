@@ -1,4 +1,0 @@
-{
-  "extends": ["next", "next/core-web-vitals"]
-}
-{"rules":  "import/no-named-as-default": false }

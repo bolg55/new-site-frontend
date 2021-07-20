@@ -41,7 +41,7 @@ export default function Experience({ jobs }) {
           })}
         </article>
       </div>
-      <Link href='#'>
+      <Link href='/contact'>
         <a className={styles.btn}>Contact me</a>
       </Link>
     </section>

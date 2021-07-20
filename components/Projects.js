@@ -4,7 +4,7 @@ import Link from "next/link"
 import Project from "@/components/Project"
 import { useRouter } from "next/router"
 
-const Projects = ({ projects, title, showLink }) => {
+const Projects = ({ projects, title, showLink, showContact }) => {
   const router = useRouter()
   return (
     <section
@@ -21,6 +21,11 @@ const Projects = ({ projects, title, showLink }) => {
       {showLink && (
         <Link href='/projects'>
           <a className={styles.btn}>All projects</a>
+        </Link>
+      )}
+      {showContact && (
+        <Link href='/contact'>
+          <a className={styles.btn}>Contact me</a>
         </Link>
       )}
     </section>
