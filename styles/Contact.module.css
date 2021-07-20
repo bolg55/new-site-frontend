@@ -72,3 +72,11 @@
 .gotcha {
   display: none;
 }
+
+@media screen and (max-width: 450px) {
+  .contactPage {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+}
