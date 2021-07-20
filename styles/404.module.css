@@ -1,0 +1,25 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  align-items: center;
+  text-align: center;
+  padding-top: 15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.error h1 {
+  font-size: 50px;
+}
+
+.error h2 {
+  font-size: 50px;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  color: #00cc66;
+}
+
+.error h4 {
+  padding: 0.5rem 0;
+}
