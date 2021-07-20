@@ -2,14 +2,23 @@ import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 import styles from "@/styles/Projects.module.css"
 import Image from "next/image"
 
-const Project = ({ description, title, github, stack, url, image, index }) => {
+const Project = ({
+  description,
+  title,
+  github,
+  stack,
+  url,
+  image,
+  index,
+  id,
+}) => {
   return (
     <article className={styles.project}>
       <div className={styles.projectImg}>
         <Image src={image.url} layout='fill'></Image>
       </div>
 
-      <div className={styles.projectInfo}>
+      <div key={id} className={styles.projectInfo}>
         <span className={styles.projectNumber}>0{index + 1}.</span>
         <h3>{title}</h3>
         <p className={styles.projectDesc}>{description}</p>
