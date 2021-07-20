@@ -10,7 +10,7 @@ const Services = () => {
   return (
     <div className={styles.services}>
       <a name='services'></a>
-      <Title title='Services' />
+      <Title title='Service' />
       <div className={styles.container}>
         <div className={styles.col1}>
           <h2>Web development</h2>
