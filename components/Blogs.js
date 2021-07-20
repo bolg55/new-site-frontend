@@ -2,10 +2,12 @@ import Title from "@/components/Title"
 import Link from "next/link"
 import Blog from "@/components/Blog"
 import styles from "@/styles/FeaturedBlogs.module.css"
+import { useRouter } from "next/router"
 
 const Blogs = ({ blogs, title, showLink }) => {
+  const router = useRouter()
   return (
-    <section className={styles.featured}>
+    <section className={router.pathname === "/" ? styles.featured : " "}>
       <Title title={title} />
       <div className={`${styles.blogsCenter} ${styles.sectionCenter}`}>
         {blogs.map((blog) => {

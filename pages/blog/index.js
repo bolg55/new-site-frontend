@@ -6,7 +6,7 @@ import Blogs from "@/components/Blogs"
 export default function BlogPage({ blogs }) {
   return (
     <Layout title='Blog | kellenbolger.ca'>
-      <Blogs blogs={blogs} title='All articles' />
+      <Blogs blogs={blogs} title='Blog' />
     </Layout>
   )
 }

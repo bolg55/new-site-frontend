@@ -1,0 +1,74 @@
+.contactPage {
+  display: grid;
+  place-items: center;
+  padding: 5rem 0;
+}
+.contactForm {
+  background: #fff;
+  border-radius: 0.25rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  width: 90vw;
+  max-width: 35rem;
+}
+
+.contactForm:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contactForm h3 {
+  padding-top: 1.25rem;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.formGroup {
+  padding: 1rem 1.5rem;
+}
+.formControl {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background: hsl(210, 36%, 96%);
+  border-radius: 0.25rem;
+  letter-spacing: 0.2rem;
+}
+
+.formControl::placeholder {
+  font-family: "Roboto";
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.submitBtn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  background-color: #00cc66;
+  color: #fff;
+  border: 2px solid transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.submitBtn:hover {
+  color: #555;
+  background-color: #00cc662f;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.gotcha {
+  display: none;
+}

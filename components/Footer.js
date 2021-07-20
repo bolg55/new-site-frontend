@@ -11,7 +11,7 @@ export default function Footer() {
           />
         </div>
         <p>
-          Copyright &copy; {new Date().getFullYear()}{" "}
+          Copyright&copy;{new Date().getFullYear()}{" "}
           <span className={styles.kbgreen}>KellenBolger.ca</span>
         </p>
       </div>
