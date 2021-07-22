@@ -60,6 +60,6 @@ Layout.defaultProps = {
   keywords:
     "next.js, react, javascript, developers kitchener, developers waterloo, front-end, junior developer",
   previewImage:
-    "https://res.cloudinary.com/dxghtqpao/image/upload/v1626975483/kbShort_5_ogszpf.png",
+    "https://res.cloudinary.com/dxghtqpao/image/upload/v1626978460/largeKBShort_dmz3d3.png",
   currentURL: "https://www.kellenbolger.ca",
 }
