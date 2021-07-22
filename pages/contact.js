@@ -1,12 +1,18 @@
 import Layout from "@/components/Layout"
 import styles from "@/styles/Contact.module.css"
+import { useRouter } from "next/router"
 
 export default function ContactPage() {
+  const router = useRouter()
   return (
-    <Layout title='Contact | kellenbolger.ca'>
+    <Layout
+      title='Contact | kellenbolger.ca'
+      description="Contact me today about building your project or if you're looking to hire, I am open to new opportunities"
+      currentURL={`https://www.kellenbolger.ca${router.pathname}`}
+    >
       <section className={styles.contactPage}>
         <article className={styles.contactForm}>
-          <h3>Get in touch</h3>
+          <h1>Get in touch</h1>
           <div className='underline'></div>
           <form action='https://formspree.io/f/mzbyakqa' method='POST'>
             <div className={styles.formGroup}>

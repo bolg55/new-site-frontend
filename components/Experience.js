@@ -10,7 +10,10 @@ export default function Experience({ jobs }) {
 
   return (
     <section className={styles.experience}>
-      <Title title='Experience' />
+      <div className={styles.title}>
+        <h2>Experience</h2>
+        <div className='underline'></div>
+      </div>
       <div className={styles.jobsCenter}>
         <div className={styles.btnContainer}>
           {jobs.map((item, index) => {

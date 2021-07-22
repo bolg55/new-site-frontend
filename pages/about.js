@@ -4,18 +4,23 @@ import About from "@/components/About"
 import { gql } from "@apollo/client"
 import client from "../apollo-client"
 import Title from "@/components/Title"
+import { useRouter } from "next/router"
 
 export default function AboutPage({ jobs, bio }) {
+  const router = useRouter()
   return (
     <Layout
       title='About | kellenbolger.ca'
-      description='About Kellen Bolger, a web developer from Waterloo, Ontario, Canada'
+      description='My name is Kellen Bolger and I am a developer from Waterloo, Ontario, Canada. I am always open to new opportunities! Feel free to send me a message '
+      currentURL={`https://www.kellenbolger.ca${router.pathname}`}
+      previewImage={bio.image.url}
     >
       <div>
         <div>
-          <Title title='About Me' />
+          <Title title='About me' />
         </div>
         <About bio={bio} />
+
         <Experience jobs={jobs} />
       </div>
     </Layout>

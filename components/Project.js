@@ -15,7 +15,7 @@ const Project = ({
   return (
     <article className={styles.project}>
       <div className={styles.projectImg}>
-        <Image src={image.url} layout='fill'></Image>
+        <Image src={image.url} layout='fill' alt='project image'></Image>
       </div>
 
       <div key={id} className={styles.projectInfo}>
