@@ -9,7 +9,7 @@ import Link from "next/link"
 const Services = () => {
   return (
     <div className={styles.services}>
-      <a name='services'></a>
+      <a name='services' href='#'></a>
       <Title title='Services' />
       <div className={styles.container}>
         <div className={styles.col1}>
