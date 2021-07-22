@@ -4,7 +4,12 @@ const About = ({ bio }) => {
   const { image, about, stack } = bio
   return (
     <div className={styles.container}>
-      <img className={styles.image} src={image.url} alt='' />
+      <img
+        className={styles.image}
+        src={image.url}
+        alt='kellen avatar'
+        loading='lazy'
+      />
       <div className={styles.about}>
         <p>{about}</p>
         <div className={styles.tech}>

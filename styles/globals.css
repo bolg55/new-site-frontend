@@ -15,6 +15,7 @@
     /* chrome firefox opera Safari, Android, iOS 4.2+*/
       url("https://db.onlinewebfonts.com/t/2a61d83e6af5b73f8f7751643f767325.svg#Greycliff CF Demi Bold")
       format("svg"); /* iOS 4.1- */
+  font-display: swap;
 }
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 

@@ -22,13 +22,13 @@ const Services = () => {
           </h4>
         </div>
         <div className={styles.col2}>
-          <Image src={pic1} alt='web development' />
+          <Image src={pic1} alt='web development' loading='lazy' />
         </div>
       </div>
 
       <div className={`${styles.container} ${styles.containerOpp}`}>
         <div className={styles.col2}>
-          <Image src={pic2} alt='coding' />
+          <Image src={pic2} alt='coding' loading='lazy' />
         </div>
         <div className={styles.col1}>
           <h2>Web design</h2>
@@ -49,7 +49,7 @@ const Services = () => {
           </h4>
         </div>
         <div className={styles.col2}>
-          <Image src={pic3} alt='SEO' />
+          <Image src={pic3} alt='SEO' loading='lazy' />
         </div>
       </div>
       <Link href='/contact'>
