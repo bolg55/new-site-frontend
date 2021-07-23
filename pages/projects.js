@@ -44,5 +44,6 @@ export async function getStaticProps() {
     props: {
       projects: data.projects,
     },
+    revalidate: 60 * 60 * 24, // 1 day in seconds
   }
 }
