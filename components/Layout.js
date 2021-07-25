@@ -56,9 +56,9 @@ export default function Layout({
 Layout.defaultProps = {
   title: "Kellen Bolger | A front-end web developer",
   description:
-    "Next.js and React specialist. Open to offers or contact me to work on your project.",
+    "My name is Kellen Bolger and I am a web developer who specializes in Next.js and React. I am open to offers, or contact me to work on your next project.",
   keywords:
-    "next.js, react, javascript, developers kitchener, developers waterloo, front-end, junior developer",
+    "next.js, react, javascript, developers kitchener, developers waterloo, front-end, front end developer, junior developer",
   previewImage:
     "https://res.cloudinary.com/dxghtqpao/image/upload/v1626978460/largeKBShort_dmz3d3.png",
   currentURL: "https://www.kellenbolger.ca",
