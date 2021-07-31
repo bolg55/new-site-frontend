@@ -42,6 +42,13 @@ export default function Experience({ jobs }) {
               </div>
             )
           })}
+          <a
+            href='https://drive.google.com/file/d/1mziXmoh2C2e0YgAs-X04Ev7MsvCKHrjb/view?usp=sharing'
+            target='_blank'
+            download
+          >
+            Download full resume
+          </a>
         </article>
       </div>
       <Link href='/contact'>
