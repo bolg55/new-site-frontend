@@ -33,10 +33,10 @@ const Project = ({
           })}
         </div>
         <div className={styles.projectLinks}>
-          <a href={github}>
+          <a href={github} target="_blank">
             <FaGithubSquare className={styles.projectIcon} />
           </a>
-          <a href={url}>
+          <a href={url} target="_blank">
             <FaShareSquare className={styles.projectIcon} />
           </a>
         </div>
