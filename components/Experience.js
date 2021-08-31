@@ -1,12 +1,12 @@
-import Title from "@/components/Title"
-import styles from "@/styles/Experience.module.css"
-import { useState } from "react"
-import { FaAngleDoubleRight } from "react-icons/fa"
-import Link from "next/link"
+import Title from '@/components/Title';
+import styles from '@/styles/Experience.module.css';
+import { useState } from 'react';
+import { FaAngleDoubleRight } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Experience({ jobs }) {
-  const [value, setValue] = useState(0)
-  const { company, position, date, desc } = jobs[value]
+  const [value, setValue] = useState(0);
+  const { company, position, date, desc } = jobs[value];
 
   return (
     <section className={styles.experience}>
@@ -23,11 +23,10 @@ export default function Experience({ jobs }) {
                 onClick={() => setValue(index)}
                 className={`${styles.jobBtn} ${
                   index === value && `${styles.activeBtn}`
-                }`}
-              >
+                }`}>
                 {item.company}
               </button>
-            )
+            );
           })}
         </div>
         <article className={styles.jobInfo}>
@@ -40,13 +39,12 @@ export default function Experience({ jobs }) {
                 <FaAngleDoubleRight className={styles.jobIcon} />
                 <p>{item.name}</p>
               </div>
-            )
+            );
           })}
           <a
-            href='https://drive.google.com/file/d/1mziXmoh2C2e0YgAs-X04Ev7MsvCKHrjb/view?usp=sharing'
+            href='https://drive.google.com/file/d/1MC4jzsXNxQ5gZFJBD2cs0F6UIn3XQMmE/view?usp=sharing'
             target='_blank'
-            download
-          >
+            download>
             Download full resume
           </a>
         </article>
@@ -55,5 +53,5 @@ export default function Experience({ jobs }) {
         <a className={styles.btn}>Contact me</a>
       </Link>
     </section>
-  )
+  );
 }
